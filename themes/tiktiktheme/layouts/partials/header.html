@@ -9,17 +9,39 @@
         <title>{{ .Site.Title }} </title>
         <style>
         body {
-            height: 100%;
-            width: 100%;
-            background-image: url("/img/background/bug.jpg");
+            background-image: url("/img/background/bug3.jpg");
+            width: auto;
+            height: auto;
+
         }
         .navbar .navbar-nav {
             display: inline-block;
             float: none;
+            background-color: black;
         }
         .navbar .navbar-collapse {
             text-align: center;
+            background-color: black;
+            border: none;
+            font-family: brandon_grotesque_regularRg;
+            font-weight: 400;
+            font-size: 16px;
+            letter-spacing: 2px;
         }
+
+        .navbar-default .navbar-nav>li>a {
+            color: white;
+        }
+
+        .footer {
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+            height: 60px;
+            background-color: white;
+            text-align: center;
+        }
+
 
         #color-me {
           background-color: green;
@@ -36,16 +58,16 @@
          <div class="collapse navbar-collapse center">
           <ul class="nav navbar-nav center">
                   <li>
-                      <a href="/shows/trending">Home</a>
+                      <a href="/shows/trending">HOME</a>
                   </li>
                   <li>
-                      <a href="/shows/trending">Code</a>
+                      <a href="/shows/trending">CODE</a>
                   </li>
                   <li>
-                      <a href="/shows/trending">Faith</a>
+                      <a href="/shows/trending">FAITH</a>
                   </li>
                   <li>
-                      <a href="/shows/trending">Photos</a>
+                      <a href="/shows/trending">PHOTOS</a>
                   </li>
           </ul>
         </div>
