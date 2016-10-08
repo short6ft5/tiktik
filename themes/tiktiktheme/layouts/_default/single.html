@@ -1,9 +1,16 @@
 {{ partial "header.html" . }}
 
+<!--Main content-->
+<main class="container">
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h3>{{ .Title }}</h3>
+      </div>
+      <div class="panel-body">
+        {{ .Content }}
+      </div>
+    </div>
+</main>
 
-<div class="container">
-    <h1>{{ .Title }}</h1>
-    <p class="lead">{{ .Content }}</p>
-</div>
 
 {{ partial "footer.html" . }}

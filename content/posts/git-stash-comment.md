@@ -5,4 +5,4 @@ title = "git stash comment"
 
 +++
 
-**HelloWorld**
+{{% highlight go %}}Hello **World!**{{% /highlight %}}
