@@ -1,6 +1,6 @@
 +++
 date = "2016-08-04T17:37:52Z"
-draft = true
+draft = false
 title = "git stash comment"
 
 +++
