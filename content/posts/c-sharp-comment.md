@@ -10,4 +10,4 @@ title = "c sharp comment"
     <header>
     </header>
     </envelope>
-{{% /highlight xml %}}
+{{% /highlight %}}

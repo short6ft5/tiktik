@@ -1,16 +1,49 @@
 {{ partial "header.html" . }}
 
+
+<style>
+#postData {
+  margin: 100px;
+}
+
+#postTitle {
+  font-size: 40px;
+}
+
+#postDate {
+  font-size: 12px;
+  color: grey;
+}
+
+#postSummary {
+  font-size: 18px;
+}
+
+#postLink {
+  font-size: 20px;
+}
+</style>
+
+
+
 <section id="main">
-  <div>
-        <ul id="list">
-            {{ range .Data.Pages }}
-            <li>
-                {{ .Title }}
-                {{ .Date.Format "Mon, Jan 2, 2006" }}
-            </li>
-            {{ end }}
-        </ul>
+
+  {{ range .Data.Pages }}
+  <div id=postData>
+    <div id="postTitle">
+      {{ .Title }}
+    </div>
+    <div id="postDate">
+      {{ .Date.Format "Mon, Jan 2, 2006" }}
+    </div>
+    <div id="postSummary">
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+    </div>
+    <div id="postLink">
+        Read More
+    </div>
   </div>
+  {{ end }}
 </section>
 
 

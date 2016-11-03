@@ -1,9 +1,9 @@
 <section id="main">
   <div>
-   <h1 id="title">{{ .Title }}</h1>
+  <h1 id="title">{{ .Title }}</h1>
         <ul id="list">
             {{ range .Data.Pages }}
-                {{ .Render "li"}}
+              {{ .Render "li"}}
             {{ end }}
         </ul>
   </div>
